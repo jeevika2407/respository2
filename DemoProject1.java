@@ -1,12 +1,14 @@
 import java.util.*;
-public class DemoProject1{
-	public static void main(String args[]) {
-Scanner sc=new Scanner(System.in);
-int age=sc.nextInt();
-String name=sc.nextLine();
-		System.out.println("name :"+name);
-System.out.println("age"+age);
 
+public class ass1 {
+    public static void main(String[] args) {
+        if (args.length < 2) {
+            System.out.println("Usage: java ass1 <name> <age>");
+            return;
+        }
+        String name = args[0];
+        int age = Integer.parseInt(args[1]);
 
-	}
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
 }
